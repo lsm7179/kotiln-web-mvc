@@ -25,10 +25,11 @@ import javax.validation.constraints.Size
 @Validated
 class ExceptionApiController {//예외가 발생했을때 처리
     @GetMapping("/hello")
-    fun hello(){
+    fun hello():String{
         //if(true) throw RuntimeException("강제 에러 발생")
         val list= mutableListOf<String>()
-        val temp = list[0]
+        //val temp = list[0]
+        return "hello"
     }
 
     @GetMapping("")
